@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="estilo.css" rel="stylesheet" type="text/css" >
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <DIV>
+        <H1>¿Cuánto conoces de arte?</H1>
+        <p>Completar todos los campos solicitados</p>
+        <form action="#" method="POST" id="ejercicioForm">
+
+            <fieldset>
+                <legend>Datos Personales</legend>
+
+                <div>
+                    <label for="nombre y apellido">Nombre y apellido *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre - Apellido" required>
+                </div>
+
+                <div>
+                    <label for="fechaNacimiento">Fecha de nacimiento *</label>
+                    <input type="date" id="fechaNacimiento" name="dia/mes/año" required>
+                </div>                
+                
+                <div>
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+                </div>
+
+            </fieldset>
+            
+            <fieldset>
+                <legend>Historia del Arte</legend>
+
+                <div>
+                    <label for="pregunta1">¿En que período histórico la humanidad comenzó a hacer dibujos?</label>
+                    <select id="curso" name="curso" required>
+                        <option value="">Seleccione una opción...</option>
+                        <option value="PRG">Neolítico</option>
+                        <option value="Ro">Edad de los Metales</option>
+                        <option value="Sist">Edad Antigua</option>
+                        <option value="Elec">Edad Media</option>
+                        <option value="Elec">Edad Moderna</option>
+                        <option value="Elec">Paleolítico</option>
+                    </select>
+                </div>
+
+                    <label>Selecciona el siglo en que comenzó el Renacimiento</label>
+                    <select id="turno" name="turno" required></select>
+                    <div>
+                        <label>
+                            <input type="radio" name="turno" value="mañana">
+                            1500 (s.XVI)
+                        </label>
+                        <label>
+                            <input type="radio" name="turno" value="tarde">
+                            1800 (s.XIX)
+                        </label>
+                        <label>
+                            <input type="radio" name="turno" value="noche">
+                            1300 (s.XIV)
+                        </label>
+                    </div>
+                    </select>
+                </div>
+
+                    
+                <div>
+                    <label>¿Qué evento determinó un cambio significativo en la moda durante el siglo XX?</label>
+                    <div>
+                            <input type="checkbox" name="Conocimientos" value="HTML">
+                            HTML
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Conocimientos" value="CSS">
+                            CSS
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Conocimientos" value="JavaScript">
+                            JavaScript
+                        </label>
+                        <label>
+                            <input type="checkbox" name="Conocimientos" value="Ninguno">
+                            Ninguno
+                        </label>
+                        
+                        
+                        Opción Correcta
+• La Primera Guerra Mundial
+Opciones Incorrectas
+• La caída del Muro de Berlín
+• La invención del motor a vapor
+
+
+                    </div>
+
+                    <div>
+                    <label for="porque">¿Por qué desea realizar el curso?</label>
+                    <textarea id="comentarios" name="comentarios" rows="10" placeholder="Escribe aquí..." required></textarea>
+                </div>
+            </fieldset>
+
+            <fieldste>
+            <div>
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los <a href="#">términos y condiciones</a> *
+                </label>
+            </div>
+
+            </fieldste>
+
+            <fieldste>
+            <!-- Botones -->
+            <div>
+                <button type="submit">Registrarse</button>
+                <button type="reset">Limpiar formulario</button>
+            </div>
+            </fieldste>
+            
+        </form>
+    </DIV>
+    <footer>
+        <p>Formulario realizado por Francesca Barbieri - 4°"B"</p>
+    </footer>
+</body>
+</html>
