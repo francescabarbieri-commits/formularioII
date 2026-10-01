@@ -4,7 +4,8 @@
     <link href="estilo.css" rel="stylesheet" type="text/css" >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario sobre Arte</title>
 </head>
 <body>
     <DIV>
@@ -49,82 +50,90 @@
                 </div>
 
                     <label>Selecciona el siglo en que comenzó el Renacimiento</label>
-                    <select id="turno" name="turno" required></select>
                     <div>
                         <label>
-                            <input type="radio" name="turno" value="mañana">
+                            <input type="radio" name="siglo" value="1500">
                             1500 (s.XVI)
                         </label>
                         <label>
-                            <input type="radio" name="turno" value="tarde">
+                            <input type="radio" name="siglo" value="1800">
                             1800 (s.XIX)
                         </label>
                         <label>
-                            <input type="radio" name="turno" value="noche">
+                            <input type="radio" name="siglo" value="1300">
                             1300 (s.XIV)
                         </label>
                     </div>
-                    </select>
                 </div>
 
                     
                 <div>
                     <label>¿Qué evento determinó un cambio significativo en la moda durante el siglo XX?</label>
                     <div>
-                            <input type="checkbox" name="Conocimientos" value="HTML">
-                            HTML
+                        <label>
+                            <input type="checkbox" name="evento" value="1GM">
+                            La Primera Guerra Mundial
                         </label>
                         <label>
-                            <input type="checkbox" name="Conocimientos" value="CSS">
-                            CSS
+                            <input type="checkbox" name="evento" value="Muro">
+                            La caída del Muro de Berlín
                         </label>
                         <label>
-                            <input type="checkbox" name="Conocimientos" value="JavaScript">
-                            JavaScript
+                            <input type="checkbox" name="evento" value="Motor">
+                            La invención del motor a vapor
                         </label>
                         <label>
-                            <input type="checkbox" name="Conocimientos" value="Ninguno">
-                            Ninguno
+                            <input type="checkbox" name="evento" value="Ninguno">
+                            Ninguno de los anteriores
                         </label>
                         
-                        
-                        Opción Correcta
-• La Primera Guerra Mundial
-Opciones Incorrectas
-• La caída del Muro de Berlín
-• La invención del motor a vapor
-
-
                     </div>
-
-                    <div>
-                    <label for="porque">¿Por qué desea realizar el curso?</label>
-                    <textarea id="comentarios" name="comentarios" rows="10" placeholder="Escribe aquí..." required></textarea>
-                </div>
             </fieldset>
 
-            <fieldste>
+                <fieldset>
+                    <legend>Pregunta de cierre</legend>
+                    <div>
+                    <label for="porque">Desarrolla brevemente un tema que te interese sobre el arte:</label>
+                    <textarea id="comentarios" name="comentarios" rows="10" placeholder="Escribe acá..." required></textarea>
+                    </div>
+
+                </fieldset>
             <div>
                 <label>
                     <input type="checkbox" name="terminos" required>
                     Acepto los <a href="#">términos y condiciones</a> *
                 </label>
+                <label>
+                    Si queres conocer más sobre distintos aspectos del arte ingresa a: <a href="https://www.bellasartes.gob.ar/coleccion/">Arte</a> *
+                </label>
+
             </div>
+
+
+            <div>
+                <label for="comentarios">Comentarios</label>
+                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribí tus comentarios acá..."></textarea>
+            </div>
+
+            </fieldset>
 
             </fieldste>
 
             <fieldste>
-            <!-- Botones -->
+
             <div>
-                <button type="submit">Registrarse</button>
-                <button type="reset">Limpiar formulario</button>
+                <button type="submit">Guardar</button>
+                <button type="reset">Realizar otra vez</button>
             </div>
             </fieldste>
             
         </form>
     </DIV>
     <footer>
-        <p>Formulario realizado por Francesca Barbieri - 4°"B"</p>
-    </footer>
+    <p>Formulario realizado por Francesca Barbieri - 4°"B"</p>
+</footer>
+
 </body>
+
+
 </html>
