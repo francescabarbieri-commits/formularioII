@@ -7,6 +7,43 @@
     padding: 0;
 }
 
+#contenedor {
+	margin: auto;  
+	height: auto; 
+	width: 95%; 
+	}
+
+
+#encabezado {
+	background-color: #9e6d45;  
+	height: 100px; 
+	}
+
+#encabezado ul {
+	float: right;  
+	height: 80px;  
+	width: 1500px;  
+	margin-top: 10px;  
+	}
+
+#encabezado ul li {
+	line-height: 40px;  
+	text-align: center;  
+	vertical-align: middle;  
+	width: 200px;  
+	list-style-type: none;  
+	float: left;  
+	}
+
+#encabezado ul li a {
+	font-family: "Arial Black", Gadget, sans-serif;  
+	font-size: 14px; 
+	font-weight: 600; 
+	text-transform: uppercase;  
+	color: #FFF; 
+	text-decoration: none;  
+	}
+
 
 form {
     display: flex;
