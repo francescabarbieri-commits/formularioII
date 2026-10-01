@@ -1,139 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="estilo.css" rel="stylesheet" type="text/css" >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Formulario sobre Arte</title>
+    <title>Formulario de Arte</title>    <link rel="stylesheet" href="style.css">    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
-    <DIV>
-        <H1>¿Cuánto conoces de arte?</H1>
-        <p>Completar todos los campos solicitados</p>
-        <form action="#" method="POST" id="ejercicioForm">
 
-            <fieldset>
-                <legend>Datos Personales</legend>
-
-                <div>
-                    <label for="nombre y apellido">Nombre y apellido *</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre - Apellido" required>
-                </div>
-
-                <div>
-                    <label for="fechaNacimiento">Fecha de nacimiento *</label>
-                    <input type="date" id="fechaNacimiento" name="dia/mes/año" required>
-                </div>                
-                
-                <div>
-                    <label for="email">Correo electrónico *</label>
-                    <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
-                </div>
-
-            </fieldset>
-            
-            <fieldset>
-                <legend>Historia del Arte</legend>
-
-                <div>
-                    <label for="pregunta1">¿En que período histórico la humanidad comenzó a hacer dibujos?</label>
-                    <select id="curso" name="curso" required>
-                        <option value="">Seleccione una opción...</option>
-                        <option value="PRG">Neolítico</option>
-                        <option value="Ro">Edad de los Metales</option>
-                        <option value="Sist">Edad Antigua</option>
-                        <option value="Elec">Edad Media</option>
-                        <option value="Elec">Edad Moderna</option>
-                        <option value="Elec">Paleolítico</option>
-                    </select>
-                </div>
-
-                    <label>Selecciona el siglo en que comenzó el Renacimiento</label>
-                    <div>
-                        <label>
-                            <input type="radio" name="siglo" value="1500">
-                            1500 (s.XVI)
-                        </label>
-                        <label>
-                            <input type="radio" name="siglo" value="1800">
-                            1800 (s.XIX)
-                        </label>
-                        <label>
-                            <input type="radio" name="siglo" value="1300">
-                            1300 (s.XIV)
-                        </label>
-                    </div>
-                </div>
-
-                    
-                <div>
-                    <label>¿Qué evento determinó un cambio significativo en la moda durante el siglo XX?</label>
-                    <div>
-                        <label>
-                            <input type="checkbox" name="evento" value="1GM">
-                            La Primera Guerra Mundial
-                        </label>
-                        <label>
-                            <input type="checkbox" name="evento" value="Muro">
-                            La caída del Muro de Berlín
-                        </label>
-                        <label>
-                            <input type="checkbox" name="evento" value="Motor">
-                            La invención del motor a vapor
-                        </label>
-                        <label>
-                            <input type="checkbox" name="evento" value="Ninguno">
-                            Ninguno de los anteriores
-                        </label>
-                        
-                    </div>
-            </fieldset>
-
-                <fieldset>
-                    <legend>Pregunta de cierre</legend>
-                    <div>
-                    <label for="porque">Desarrolla brevemente un tema que te interese sobre el arte:</label>
-                    <textarea id="comentarios" name="comentarios" rows="10" placeholder="Escribe acá..." required></textarea>
-                    </div>
-
-                </fieldset>
-            <div>
-                <label>
-                    <input type="checkbox" name="terminos" required>
-                    Acepto los <a href="#">términos y condiciones</a> *
-                </label>
-                <label>
-                    Si queres conocer más sobre distintos aspectos del arte ingresa a: <a href="https://www.bellasartes.gob.ar/coleccion/">Arte</a> *
-                </label>
-
+    <section>
+        <nav class="navbar">
+            <div class="logo" id="loguito">
+            <img src="" width="80" height="70" alt="logito" />
             </div>
 
-
             <div>
-                <label for="comentarios">Comentarios</label>
-                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribí tus comentarios acá..."></textarea>
+            <ul class="nav-links" id="paginas">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="formulario.html">¿Cuánto sabes de arte?</a></li>
             </div>
-
-            </fieldset>
-
-            </fieldste>
-
-            <fieldste>
-
-            <div>
-                <button type="submit">Guardar</button>
-                <button type="reset">Realizar otra vez</button>
-            </div>
-            </fieldste>
-            
-        </form>
-    </DIV>
-    <footer>
-    <p>Formulario realizado por Francesca Barbieri - 4°"B"</p>
-</footer>
-
-</body>
-
-
-</html>
+        </nav>
+    </section>
