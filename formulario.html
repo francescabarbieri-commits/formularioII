@@ -1,43 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+ <!DOCTYPE html>
+<html lang="es">
 <head>
-    <link href="estilo.css" rel="stylesheet" type="text/css" >
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Formulario sobre Arte</title>
 </head>
 <body>
-    <DIV>
-        <H1>¿Cuánto conoces de arte?</H1>
-        <p>Completar todos los campos solicitados</p>
+    <div>
+        <h1>¿Cuánto conoces de arte?</h1>
+        <p class="subtitulo">Completar todos los campos solicitados</p>
+        
         <form action="#" method="POST" id="ejercicioForm">
+
 
             <fieldset>
                 <legend>Datos Personales</legend>
 
-                <div>
-                    <label for="nombre y apellido">Nombre y apellido *</label>
+                <div class="control-group">
+                    <label for="nombre">Nombre y apellido *</label>
                     <input type="text" id="nombre" name="nombre" placeholder="Nombre - Apellido" required>
                 </div>
 
-                <div>
+                <div class="control-group">
                     <label for="fechaNacimiento">Fecha de nacimiento *</label>
-                    <input type="date" id="fechaNacimiento" name="dia/mes/año" required>
+                    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
                 </div>                
                 
-                <div>
+                <div class="control-group">
                     <label for="email">Correo electrónico *</label>
                     <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
                 </div>
-
             </fieldset>
             
+
             <fieldset>
                 <legend>Historia del Arte</legend>
 
-                <div>
-                    <label for="pregunta1">¿En que período histórico la humanidad comenzó a hacer dibujos?</label>
+                <div class="control-group">
+                    <label for="curso">¿En qué período histórico la humanidad comenzó a hacer dibujos?</label>
                     <select id="curso" name="curso" required>
                         <option value="">Seleccione una opción...</option>
                         <option value="PRG">Neolítico</option>
@@ -49,91 +50,86 @@
                     </select>
                 </div>
 
+                <div class="control-group">
                     <label>Selecciona el siglo en que comenzó el Renacimiento</label>
-                    <div>
-                        <label>
+                    <div class="opciones-group">
+                        <label class="opcion-inline">
                             <input type="radio" name="siglo" value="1500">
                             1500 (s.XVI)
                         </label>
-                        <label>
+                        <label class="opcion-inline">
                             <input type="radio" name="siglo" value="1800">
                             1800 (s.XIX)
                         </label>
-                        <label>
+                        <label class="opcion-inline">
                             <input type="radio" name="siglo" value="1300">
                             1300 (s.XIV)
                         </label>
                     </div>
                 </div>
 
-                    
-                <div>
+                <div class="control-group">
                     <label>¿Qué evento determinó un cambio significativo en la moda durante el siglo XX?</label>
-                    <div>
-                        <label>
+                    <div class="opciones-group">
+                        <label class="opcion-inline">
                             <input type="checkbox" name="evento" value="1GM">
                             La Primera Guerra Mundial
                         </label>
-                        <label>
+                        <label class="opcion-inline">
                             <input type="checkbox" name="evento" value="Muro">
                             La caída del Muro de Berlín
                         </label>
-                        <label>
+                        <label class="opcion-inline">
                             <input type="checkbox" name="evento" value="Motor">
                             La invención del motor a vapor
                         </label>
-                        <label>
+                        <label class="opcion-inline">
                             <input type="checkbox" name="evento" value="Ninguno">
                             Ninguno de los anteriores
                         </label>
-                        
                     </div>
+                </div>
             </fieldset>
 
-                <fieldset>
-                    <legend>Pregunta de cierre</legend>
-                    <div>
-                    <label for="porque">Desarrolla brevemente un tema que te interese sobre el arte:</label>
-                    <textarea id="comentarios" name="comentarios" rows="10" placeholder="Escribe acá..." required></textarea>
-                    </div>
 
-                </fieldset>
-            <div>
-                <label>
-                    <input type="checkbox" name="terminos" required>
-                    Acepto los <a href="#">términos y condiciones</a> *
-                </label>
-                <label>
-                    Si queres conocer más sobre distintos aspectos del arte ingresa a: <a href="https://www.bellasartes.gob.ar/coleccion/">Arte</a> *
-                </label>
-
-            </div>
-
-
-            <div>
-                <label for="comentarios">Comentarios</label>
-                <textarea id="comentarios" name="comentarios" rows="4" placeholder="Escribí tus comentarios acá..."></textarea>
-            </div>
-
+            <fieldset>
+                <legend>Pregunta de cierre</legend>
+                <div class="control-group">
+                    <label for="comentarios-arte">Desarrolla brevemente un tema que te interese sobre el arte:</label>
+                    <textarea id="comentarios-arte" name="comentarios_arte" rows="6" placeholder="Escribe acá..." required></textarea>
+                </div>
             </fieldset>
 
-            </fieldste>
 
-            <fieldste>
+            <fieldset class="fieldset-noborder">
+                <div class="control-group">
+                    <label class="opcion-inline">
+                        <input type="checkbox" name="terminos" required>
+                        <span>Acepto los <a href="#">términos y condiciones</a> *</span>
+                    </label>
+                </div>
+                <div class="control-group enlace-interes">
+                    <p>Si querés conocer más sobre distintos aspectos del arte ingresá a: <a href="https://www.bellasartes.gob.ar/coleccion/" target="_blank">Arte</a> *</p>
+                </div>
+            </fieldset>
 
-            <div>
-                <button type="submit">Guardar</button>
-                <button type="reset">Realizar otra vez</button>
+            <fieldset>
+                <div class="control-group">
+                    <label for="comentarios">Comentarios Generales</label>
+                    <textarea id="comentarios" name="comentarios" rows="3" placeholder="Escribí tus comentarios acá..."></textarea>
+                </div>
+            </fieldset>
+
+
+            <div class="botones-container">
+                <button type="submit" class="btn-guardar">Guardar</button>
+                <button type="reset" class="btn-reset">Realizar otra vez</button>
             </div>
-            </fieldste>
             
         </form>
-    </DIV>
+    </div>
     <footer>
-    <p>Formulario realizado por Francesca Barbieri - 4°"B"</p>
-</footer>
-
+        <p>Formulario realizado por Francesca Barbieri - 4°"B"</p>
+    </footer>
 </body>
-
-
 </html>
